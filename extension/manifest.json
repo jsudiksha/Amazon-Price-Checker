@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "version": "1.0",
+    "name": "Amazon Price Checker",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["js/jquery-3.6.0.min.js","content.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["js/jquery-3.6.0.min.js","js/firebase-app.js","js/firebase-auth.js","background.js"]
+    },
+    "browser_action": {
+        "icons": {
+            "128": "amazon128.png",
+            "48": "amazon48.png",
+            "16": "amazon16.png"
+          },
+        "default_icon": "amazon16.png",
+        "default_title": "Amazon Price Checker",
+        "default_popup": "popup.html"
+    },
+    
+    "permissions": ["tabs", "activeTab"]
+    
+}

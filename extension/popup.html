@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extension Page</title>
+    <!-- <link rel="stylesheet" href="resetStyleSheet.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body ng-app="amazonextension">
+    <div >
+    <img src="amazon_PNG21.png" alt="amazon logo" height="100 px" width="100 px" style="padding-left: 30px;" id="logo">
+    <div style="color: grey;">Copy the product url first</div>
+    <a href="#/login" id="login_link">Sign In</a>
+    <a href="#/work" id="add_product" >Add Product</a><br />
+    <a href="#/signup" id="signup_link" >Sign up</a>
+    <div ui-view></div>
+    <br />
+    <button type="button" class="button" id="SignInBtn"  >Sign In</button>
+    <button type="button" class="button" id="SignUpBtn" >Sign Up</button>
+    <button type="button" class="button" id="SignOutBtn" >Sign Out</button>
+    <button type="button" class="button" id="productLink" >Submit</button>
+  </div>
+  </body>
+  <script src="js/angular.js"></script>
+  <script src="js/angular_UI_router.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="popup.js"></script>
+</html>

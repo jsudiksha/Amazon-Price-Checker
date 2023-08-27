@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="signup"  method="post" onsubmit="return false">
+      <br />
+      Name: <input type="text" id="username"/> <br />
+      Email:<input type="email" name="email" id="email" /> <br />
+      Set Password:<input type="password" name="password" id="password" /><br />
+      Created At: <input type="text" id="createdAt">
+      <p>(Have an account?<a href="#/login">Sign in</a>)</p>
+    </form>
+  </body>
+  <script src="js/angular.js"></script>
+  <script src="js/angular_UI_router.js"></script>
+  <script src="../server/model/User.js"></script>
+  <script src="popup.js"></script>
+</html>

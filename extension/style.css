@@ -1,0 +1,43 @@
+body{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    
+    align-items: center;
+    justify-content: center;
+}
+
+#SignUpBtn{
+    visibility: visible;
+}
+
+#SignOutBtn{
+    visibility: hidden;
+}
+
+#productLink{
+    visibility: hidden;
+}
+
+#add_product{
+    visibility: hidden;
+}
+
+#login_link{
+    visibility: hidden;
+}
+
+#signup_link{
+    visibility: hidden;
+}
+.button {
+    background-color:rgb(34, 108, 204);
+    border: none;
+    color: white;
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
